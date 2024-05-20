@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+    <pattern>*</pattern>
+    <template>Tôi không có câu trả lời về điều đó.</template>
+  </category>
+  <category>
+    <pattern>BẠN TÊN GÌ</pattern>
+    <template>Tôi là MedBot, trợ lý dược phẩm của bạn. Anh/Chị cần giúp gì không?</template>
+</category>
+<category>
+    <pattern>BẠN LÀ AI</pattern>
+    <template>Tôi là MedBot, trợ lý dược phẩm ảo của bạn. Tôi ở đây để giúp anh/chị với các câu hỏi về thuốc và sức khỏe.</template>
+</category>
+<category>
+    <pattern>BẠN CÓ THỂ LÀM GÌ</pattern>
+    <template>Tôi có thể tư vấn về cách sử dụng thuốc, liều lượng, tác dụng phụ, và trả lời các câu hỏi thường gặp về sức khỏe. Anh/Chị có cần giúp gì không?</template>
+</category>
+<category>
+    <pattern>CHÀO</pattern>
+    <template>Xin chào! Anh/Chị cần giúp gì không?</template>
+</category>
+<category>
+    <pattern>CHÀO BUỔI SÁNG</pattern>
+    <template>Chào buổi sáng! Anh/Chị cần giúp gì không?</template>
+</category>
+<category>
+    <pattern>CHÀO BUỔI CHIỀU</pattern>
+    <template>Chào buổi chiều! Anh/Chị cần giúp gì không?</template>
+</category>
+<category>
+    <pattern>CHÀO BUỔI TỐI</pattern>
+    <template>Chào buổi tối! Anh/Chị cần giúp gì không?</template>
+</category>
+
+ 
+<category>
+    <pattern>* ĐAU ĐẦU *</pattern>
+    <template>
+        Anh/Chị có thể dùng paracetamol hoặc ibuprofen để giảm đau đầu. 
+        Đây là một số thông tin chi tiết về cách sử dụng:
+        <button>
+            <text>Paracetamol</text>
+            <url>https://www.example.com/paracetamol</url>
+        </button>
+        <button>
+            <text>Ibuprofen</text>
+            <url>https://www.example.com/ibuprofen</url>
+        </button>
+    </template>
+</category>
+
+
+<category>
+  <pattern>THUỐC ĐAU ĐẦU</pattern>
+  <template>
+    <random>
+      <li>Bạn đang tìm kiếm loại thuốc đau đầu nào? Có nhiều loại như Paracetamol, Ibuprofen...</li>
+      <li>Xin chào! Bạn cần giúp đỡ về loại thuốc đau đầu nào? Paracetamol hay Ibuprofen?</li>
+    </random>
+  </template>
+</category>
+
+<category>
+  <pattern>PARACETAMOL</pattern>
+  <template>
+    Paracetamol là một loại thuốc giảm đau và hạ sốt. Bạn nên uống 500mg mỗi 4-6 giờ, tối đa không quá 4g mỗi ngày.
+  </template>
+</category>
+
+<category>
+  <pattern>IBUPROFEN</pattern>
+  <template>
+    Ibuprofen là một loại thuốc giảm đau và kháng viêm. Bạn nên uống 200-400mg mỗi 4-6 giờ, tối đa không quá 1200mg mỗi ngày.
+  </template>
+</category>
+<category>
+    <pattern>LIỀU DÙNG PARACETAMOL</pattern>
+    <template>Người lớn có thể dùng 500mg đến 1000mg mỗi 4-6 giờ, tối đa 4000mg mỗi ngày. Anh/Chị có cần thêm thông tin gì không?</template>
+</category>
+<category>
+    <pattern>LIỀU DÙNG IBUPROFEN</pattern>
+    <template>Người lớn có thể dùng 200mg đến 400mg mỗi 4-6 giờ, tối đa 1200mg mỗi ngày. Anh/Chị có cần thêm thông tin gì không?</template>
+</category>
+
+
+
+
+<category>
+  <pattern>THUỐC CẢM CÚM</pattern>
+  <template>
+    <random>
+      <li>Bạn muốn dùng thuốc cảm cúm loại nào? Có nhiều loại như Decolgen, Tylenol...</li>
+      <li>Xin chào! Bạn cần giúp đỡ về loại thuốc cảm cúm nào? Decolgen hay Tylenol?</li>
+    </random>
+  </template>
+</category>
+
+<category>
+  <pattern>DECOLGEN</pattern>
+  <template>
+    Decolgen là thuốc dùng để điều trị các triệu chứng cảm cúm như nghẹt mũi, đau đầu và sốt. Bạn nên uống 1 viên mỗi 6 giờ.
+  </template>
+</category>
+
+<category>
+  <pattern>TYLENOL</pattern>
+  <template>
+    Tylenol là thuốc giảm đau và hạ sốt. Bạn nên uống 500mg mỗi 4-6 giờ, tối đa không quá 4g mỗi ngày.
+  </template>
+</category>
+
+
+
+
+<category>
+    <pattern>TÔI BỊ HO</pattern>
+    <template>
+        Anh/Chị có thể dùng thuốc ho như dextromethorphan hoặc sirô ho thảo dược.
+        Đây là một số thông tin chi tiết về cách sử dụng:
+        <button>
+            <text>Dextromethorphan</text>
+            <url>https://www.example.com/dextromethorphan</url>
+        </button>
+        <button>
+            <text>Sirô ho thảo dược</text>
+            <url>https://www.example.com/siro-ho</url>
+        </button>
+    </template>
+</category>
+
+<category>
+    <pattern>LIỀU DÙNG DEXTROMETHORPHAN</pattern>
+    <template>Người lớn có thể dùng 10-20mg mỗi 4 giờ hoặc 30mg mỗi 6-8 giờ. Tối đa 120mg mỗi ngày. Anh/Chị có cần thêm thông tin gì không?</template>
+</category>
+<category>
+    <pattern>TÔI BỊ CẢM CÚM</pattern>
+    <template>Anh/Chị có thể dùng thuốc giảm triệu chứng như paracetamol hoặc các thuốc cảm cúm tổng hợp như DayQuil hoặc NyQuil. Anh/Chị có muốn biết thêm về liều dùng không?</template>
+</category>
+<category>
+    <pattern>LIỀU DÙNG DAYQUIL</pattern>
+    <template>Người lớn có thể dùng 2 viên mỗi 4 giờ khi cần thiết, nhưng không quá 8 viên trong 24 giờ. Anh/Chị có cần thêm thông tin gì không?</template>
+</category>
+
+
+<category>
+    <pattern>TÔI BỊ ĐAU DẠ DÀY</pattern>
+    <template>
+        Anh/Chị có thể dùng thuốc antacid như Maalox hoặc thuốc ức chế bơm proton như omeprazole.
+        Đây là một số thông tin chi tiết về cách sử dụng:
+        <button>
+            <text>Maalox</text>
+            <url>https://www.example.com/maalox</url>
+        </button>
+        <button>
+            <text>Omeprazole</text>
+            <url>https://www.example.com/omeprazole</url>
+        </button>
+    </template>
+</category>
+
+<category>
+    <pattern>LIỀU DÙNG MAALOX</pattern>
+    <template>Người lớn có thể dùng 1-2 muỗng mỗi 4-6 giờ khi cần thiết, nhưng không quá 6 lần trong 24 giờ. Anh/Chị có cần thêm thông tin gì không?</template>
+</category>
+<category>
+    <pattern>LIỀU DÙNG OMEPRAZOLE</pattern>
+    <template>Người lớn có thể dùng 20mg mỗi ngày trong vòng 4-8 tuần. Anh/Chị có cần thêm thông tin gì không?</template>
+</category>
+
+
+
+
+
+<category>
+  <pattern>THUỐC KHÁNG SINH</pattern>
+  <template>
+    <condition name="type" value="penicillin">
+      Penicillin là một loại thuốc kháng sinh. Bạn nên uống 250-500mg mỗi 6-8 giờ, tùy theo tình trạng bệnh lý.
+    </condition>
+    <condition name="type" value="amoxicillin">
+      Amoxicillin là một loại thuốc kháng sinh. Bạn nên uống 500mg mỗi 8 giờ, tùy theo tình trạng bệnh lý.
+    </condition>
+    <condition name="type" value="default">
+      Bạn muốn biết về loại thuốc kháng sinh nào? Có nhiều loại như Penicillin, Amoxicillin...
+    </condition>
+  </template>
+</category>
+
+<category>
+  <pattern>PENICILLIN</pattern>
+  <template>
+    <think><set name="type">penicillin</set></think>
+    <srai>THUỐC KHÁNG SINH</srai>
+  </template>
+</category>
+
+<category>
+  <pattern>AMOXICILLIN</pattern>
+  <template>
+    <think><set name="type">amoxicillin</set></think>
+    <srai>THUỐC KHÁNG SINH</srai>
+  </template>
+</category>
+
+
+
+
+
+<category>
+    <pattern>CÓ LOẠI THUỐC NÀO KHÔNG GÂY BUỒN NGỦ</pattern>
+    <template>
+        >Anh/Chị có thể dùng các thuốc như loratadine hoặc fexofenadine. Những thuốc này ít gây buồn ngủ hơn so với các thuốc kháng histamin khác. Anh/Chị có muốn biết thêm về liều dùng không?
+        Đây là một số thông tin chi tiết về cách sử dụng:
+        <button>
+            <text>Loratadine</text>
+            <url>https://www.example.com/loratadine</url>
+        </button>
+        <button>
+            <text>Fexofenadine</text>
+            <url>https://www.example.com/fexofenadine</url>
+        </button>
+    </template>
+</category>
+
+<category>
+    <pattern>LIỀU DÙNG LORATADINE</pattern>
+    <template>Người lớn và trẻ em trên 6 tuổi có thể dùng 10mg mỗi ngày một lần. Anh/Chị có cần thêm thông tin gì không?</template>
+</category>
+<category>
+    <pattern>LIỀU DÙNG FEXOFENADINE</pattern>
+    <template>Người lớn và trẻ em trên 12 tuổi có thể dùng 60mg mỗi 12 giờ hoặc 180mg mỗi ngày một lần. Anh/Chị có cần thêm thông tin gì không?</template>
+</category>
+
+
+<category>
+    <pattern>THUỐC AN TOÀN CHO PHỤ NỮ MANG THAI</pattern>
+    <template>
+        Phụ nữ mang thai nên tham khảo ý kiến bác sĩ trước khi dùng bất kỳ loại thuốc nào. 
+        Tuy nhiên, paracetamol thường được coi là an toàn cho phụ nữ mang thai khi dùng đúng liều lượng.
+        Đây là một số thông tin chi tiết về cách sử dụng:
+        <button>
+            <text>Paracetamol</text>
+            <url>https://www.example.com/paracetamol-pregnancy</url>
+        </button>
+    </template>
+</category>
+
+<category>
+    <pattern>LIỀU DÙNG PARACETAMOL CHO PHỤ NỮ MANG THAI</pattern>
+    <template>Người lớn có thể dùng 500mg đến 1000mg mỗi 4-6 giờ, tối đa 4000mg mỗi ngày. Anh/Chị có cần thêm thông tin gì không?</template>
+</category>
+
+<category>
+  <pattern>LIỀU DÙNG</pattern>
+  <template>
+    Bạn cần biết liều dùng của loại thuốc nào? Hãy cho tôi biết tên thuốc.
+  </template>
+</category>
+
+
+
+
+<category>
+  <pattern>TÁC DỤNG PHỤ</pattern>
+  <template>
+    <random>
+      <li>Bạn đang lo lắng về tác dụng phụ của loại thuốc nào? Có thể là Paracetamol, Ibuprofen...</li>
+      <li>Xin chào! Bạn cần biết tác dụng phụ của loại thuốc nào? Paracetamol hay Ibuprofen?</li>
+    </random>
+  </template>
+</category>
+
+<category>
+  <pattern>TÁC DỤNG PHỤ PARACETAMOL</pattern>
+  <template>
+    Paracetamol có thể gây buồn nôn, phát ban hoặc tổn thương gan nếu dùng quá liều.
+  </template>
+</category>
+
+<category>
+    <pattern>TÁC DỤNG PHỤ CỦA IBUPROFEN</pattern>
+    <template>
+        Tác dụng phụ thường gặp của ibuprofen bao gồm buồn nôn, chóng mặt, và đau dạ dày. 
+        Hãy tham khảo bác sĩ nếu có bất kỳ triệu chứng nào nghiêm trọng. Anh/Chị có cần thêm thông tin gì không?
+    </template>
+</category>
+<category>
+    <pattern>TÁC DỤNG PHỤ CỦA KHÁNG SINH</pattern>
+    <template>
+        Các tác dụng phụ của kháng sinh có thể bao gồm tiêu chảy, buồn nôn, và dị ứng. 
+        Một số loại kháng sinh cũng có thể gây tác dụng phụ nghiêm trọng hơn như tổn thương gan hoặc thận. 
+        Anh/Chị có cần thêm thông tin gì không?
+    </template>
+</category>
+
+</aiml>
+
